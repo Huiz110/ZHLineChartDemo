@@ -8,20 +8,27 @@
 
 #import "ZHViewController.h"
 
+#import <ZHLineChartDemo/ZHChartView.h>
+
 @interface ZHViewController ()
 
 @end
 
 @implementation ZHViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    ZHChartView *chartView = [[ZHChartView alloc] init];
+    chartView.bounds = CGRectMake(0.f, 0.f, self.view.bounds.size.width, kChartViewH);
+    chartView.center = self.view.center;
+    
+    [self.view addSubview:chartView];
+    
+    chartView.dataModels = [ZHLineChartModel testDataArray];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
