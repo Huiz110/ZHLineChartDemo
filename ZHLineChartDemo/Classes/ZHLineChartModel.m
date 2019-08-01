@@ -29,17 +29,17 @@
 
 #pragma mark - YYModel
 
-- (BOOL)modelCustomTransformFromDictionary:(NSDictionary *)dic {
-    [self setupYPoint];
-    
-    return YES;
-}
-
-+ (NSDictionary<NSString *,id> *)modelCustomPropertyMapper {
-    return @{
-        @"score" : @"totalScore",
-    };
-}
+//- (BOOL)modelCustomTransformFromDictionary:(NSDictionary *)dic {
+//    [self setupYPoint];
+//    
+//    return YES;
+//}
+//
+//+ (NSDictionary<NSString *,id> *)modelCustomPropertyMapper {
+//    return @{
+//        @"score" : @"totalScore",
+//    };
+//}
 
 #pragma mark - Helper
 

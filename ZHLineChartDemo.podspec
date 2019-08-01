@@ -31,10 +31,6 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ZHLineChartDemo/Classes/**/*'
-
-  s.resources = 'ZHLineChartDemo/Assets/*'
-
-  s.dependency 'YYModel'
   
   # s.resource_bundles = {
   #   'ZHLineChartDemo' => ['ZHLineChartDemo/Assets/*.png']
